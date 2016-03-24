@@ -1,16 +1,6 @@
-# Base EFM32 CMake file
-#
-# This can be used as is as a project base, or by adding the efm32-base
-# repository as a submodule to another project, copying this CMakeLists file
-# to the top level directory, and updating the BASE_LOCATION variable to reflect this
-# change
-
-###### Project Environment #####
-
 # Set minimum CMake version
 cmake_minimum_required(VERSION 3.3)
 
-# Set efm32-base project location
 # Set the compiler (must be prior to project setup)
 include(./libopencm3/toolchain/arm-gcc.cmake)
 
