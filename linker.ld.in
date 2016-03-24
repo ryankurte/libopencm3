@@ -1,0 +1,12 @@
+/* 
+ * Automagically generated linker file
+ * Based on cmake configuration variables
+ */
+
+MEMORY
+{
+	rom (rx) : ORIGIN = ${ROM_START}, LENGTH = ${ROM_LENGTH}
+	ram (rwx) : ORIGIN = ${RAM_START}, LENGTH = ${RAM_LENGTH}
+}
+
+INCLUDE ${OPENCM3_TARGET_LINKER_SCRIPT};
